@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://djwf3qw3cr3ib"]
+
+[ext_resource type="Script" uid="uid://blr5m81vb41s5" path="res://Scripts/hud.gd" id="1_e0onf"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1098012674]
+script = ExtResource("1_e0onf")
+
+[node name="CoinLabel" type="Label" parent="." unique_id=1274453361]
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 69.0
+offset_bottom = 53.0
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 10
+text = "Coins: 0
+"

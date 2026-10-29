@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://lnmv0rhbfjvw"]
+
+[ext_resource type="Texture2D" uid="uid://coqx6b80t04cq" path="res://Assets/Platformer/Coins.png" id="1_paeek"]
+[ext_resource type="Script" uid="uid://c5sutvseqadrt" path="res://Scripts/goal.gd" id="1_s0pnd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2v11f"]
+
+[node name="Goal" type="Area2D" unique_id=175491568]
+script = ExtResource("1_s0pnd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1115461175]
+scale = Vector2(2, 2)
+texture = ExtResource("1_paeek")
+hframes = 5
+vframes = 6
+frame = 24
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1489934860]
+shape = SubResource("RectangleShape2D_2v11f")
